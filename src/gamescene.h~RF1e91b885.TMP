@@ -1,0 +1,80 @@
+#ifndef GAMESCENE_H
+#define GAMESCENE_H
+
+#include <QPushButton>
+#include <QLabel>
+#include <QPixmap>
+#include <QVector>
+#include <QTimer>
+
+class GameScene : public QWidget   //Base Scene
+{
+public:
+    explicit GameScene(QWidget *parent = 0);
+    virtual ~GameScene();
+};
+
+class LoadingScene:public GameScene  //Loading Scene
+{
+    Q_OBJECT
+public:
+    LoadingScene(QWidget *parent = 0);
+    ~LoadingScene();
+    virtual void paintEvent(QPaintEvent *event);
+    void setProgress(int progress);
+    bool eventFilter(QObject *obj, QEvent *event);
+    bool isCompleted = false;
+private:
+    QPushButton *loadingBtn;
+    QLabel *infoLabel;
+signals:
+    void sendCurrentIndex(int);
+public slots:
+    void loadingBtnClicked();
+};
+
+class MainScene:public GameScene  //Main Scene
+{
+    Q_OBJECT
+public:
+    MainScene(QWidget *parent = 0);
+    ~MainScene();
+    virtual void paintEvent(QPaintEvent *event);
+    bool eventFilter(QObject *obj, QEvent *event);
+private:
+    QPushButton *playBtn;
+    QPushButton *timeModeBtn;
+    QPushButton *challengeModeBtn;
+    QPushButton *aquariumModeBtn;
+    QLabel *infoLabel;
+    QPushButton *hallOfFameBtn;
+    QPushButton *optionsBtn;
+    QPushButton *helpBtn;
+    QPushButton *quitBtn;
+    QPixmap tailPix;
+    QVector<QPixmap> tailPixVector;
+    QTimer *timer;
+    int tailIndex = 0;
+signals:
+    void sendCurrentIndex(int);
+public slots:
+    void playBtnClicked();
+    void tailPixChange();
+};
+
+class PlayingScene:public GameScene  //Playing Scene
+{
+    Q_OBJECT
+public:
+    PlayingScene(QWidget *parent = 0);
+    ~PlayingScene();
+    virtual void paintEvent(QPaintEvent *event);
+private:
+    QPushButton *backBtn;
+signals:
+    void sendCurrentIndex(int);
+public slots:
+    void backBtnClicked();
+};
+
+#endif // GAMESCENE_H

@@ -1,0 +1,44 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Resource/images/titlescreen.jpg</file>
+        <file>Resource/images/selectorback.jpg</file>
+        <file>Resource/images/food.png</file>
+        <file>Resource/images/money.png</file>
+        <file>Resource/images/stinky.png</file>
+        <file>Resource/images/sylv.png</file>
+        <file>Resource/images/ultravore.png</file>
+        <file>Resource/images/aquarium1.jpg</file>
+        <file>Resource/images/appIcon.gif</file>
+        <file>Resource/images/battletankbutton.png</file>
+        <file>Resource/images/middlebutton.png</file>
+        <file>Resource/images/battletankbuttond.png</file>
+        <file>Resource/images/middlebuttond.png</file>
+        <file>Resource/images/GSSpeechBubble.png</file>
+        <file>Resource/images/tailflop.png</file>
+        <file>Resource/images/loaderbar.png</file>
+        <file>Resource/images/loaderbarreadyover.png</file>
+        <file>Resource/images/loaderbarready.png</file>
+        <file>Resource/images/menubar.png</file>
+        <file>Resource/images/smallswim.png</file>
+        <file>Resource/images/smallturn.png</file>
+        <file>Resource/images/smalldie.png</file>
+        <file>Resource/images/hungryeat.png</file>
+        <file>Resource/images/hungryswim.png</file>
+        <file>Resource/images/hungryturn.png</file>
+        <file>Resource/images/smalleat.png</file>
+        <file>Resource/images/breeder.png</file>
+        <file>Resource/images/hungrybreeder.png</file>
+        <file>Resource/images/niko.png</file>
+        <file>Resource/images/pearl.png</file>
+        <file>Resource/images/vert.png</file>
+        <file>Resource/images/itchy.png</file>
+        <file>Resource/images/seymour.png</file>
+        <file>Resource/images/gus.png</file>
+        <file>Resource/images/OPTIONSBUTTON.png</file>
+        <file>Resource/images/OPTIONSBUTTONd.png</file>
+        <file>Resource/images/scl_breeder.png</file>
+        <file>Resource/images/scl_oscar.png</file>
+        <file>Resource/images/scl_ultra.png</file>
+        <file>Resource/images/EggPieces.png</file>
+    </qresource>
+</RCC>
